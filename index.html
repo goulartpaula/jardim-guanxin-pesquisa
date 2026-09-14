@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="200" height="200" fill="#1c1b1a"/><circle cx="100" cy="100" r="52" fill="none" stroke="#b68235" stroke-width="1.5"/><path d="M100 138V88" stroke="#b68235" stroke-width="2"/><path d="M100 104c-16 0-24-10-24-20 12 0 24 8 24 20z" fill="#b68235"/><path d="M100 96c14 0 22-9 22-18-11 0-22 7-22 18z" fill="#c28d41"/><circle cx="100" cy="142" r="4" fill="#ffe3bf"/></svg></template>
+<link rel="stylesheet" href="_ds/classical-8d1b0f6f-6463-46ba-88be-7bd6541179e0/styles.css">
+<script src="_ds/classical-8d1b0f6f-6463-46ba-88be-7bd6541179e0/_ds_bundle.js"></script>
+<script src="./image-slot.js"></script>
+<script>
+  /* Supabase — cole aqui a URL do projeto e a chave anon (Settings › API).
+     Enquanto ficar em branco, as respostas são gravadas só no navegador. */
+  window.GUANXIN_SUPABASE = { url: '', anonKey: '' };
+</script>
+<style>
+  html, body { margin: 0; background: #1c1b1a; }
+  a { color: var(--color-accent-700); }
+  a:hover { color: var(--color-accent-800); }
+  @keyframes gx-rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  @keyframes gx-fade { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes gx-breathe { 0%,100% { transform: scale(1); } 50% { transform: scale(1.035); } }
+  @keyframes gx-stem { from { height: 0; } to { height: 74px; } }
+  @keyframes gx-leaf { from { opacity: 0; transform: scale(0.2) rotate(0deg); } to { opacity: 1; transform: scale(1) rotate(var(--r)); } }
+  @keyframes gx-seed { from { opacity: 0; transform: translateY(-26px) scale(0.4); } to { opacity: 1; transform: none; } }
+</style>
+</helmet>
+
+<div style="min-height: 100dvh; display: flex; flex-direction: column; background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); overflow-x: hidden;">
+
+  <sc-if value="{{ isIntro }}" hint-placeholder-val="{{ true }}">
+    <div style="position: relative; flex: 1; display: flex; flex-direction: column; justify-content: flex-end; min-height: 82dvh; background: #1c1b1a; isolation: isolate;">
+      <div style="position: absolute; inset: 0; z-index: 0; overflow: hidden;">
+        <video id="gx-video" src="uploads/arquivo-1789412551678-let5.mp4" autoPlay="{{ true }}" muted="{{ true }}" loop="{{ true }}" playsInline="{{ true }}" preload="auto" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none;"></video>
+      </div>
+      <div style="position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(to top, rgba(22,21,20,0.9) 0%, rgba(22,21,20,0.58) 45%, rgba(22,21,20,0.28) 100%);"></div>
+      <div style="position: relative; z-index: 2; padding: 40px 24px 44px; max-width: 720px; width: 100%; margin: 0 auto; animation: gx-rise 900ms ease-out both;">
+        <div style="font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; font-variant-numeric: tabular-nums; color: var(--color-accent-300); margin-bottom: 26px;">Curitiba · Pesquisa aberta</div>
+        <h1 style="font-family: var(--font-heading); font-weight: 400; font-size: clamp(46px, 13vw, 84px); line-height: 0.98; letter-spacing: 0.005em; color: #f3f2f2; margin: 0 0 20px;">Jardim<br>Guanxin</h1>
+        <p style="font-size: clamp(17px, 4.6vw, 22px); line-height: 1.5; font-style: italic; color: rgba(243,242,242,0.84); max-width: 30ch; margin: 0 0 34px; text-wrap: pretty;">Olá! Queremos ouvir você.</p>
+        <div style="display: flex; align-items: center; gap: 12px; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(243,242,242,0.5);">
+          <span style="display: block; width: 34px; height: 1px; background: rgba(243,242,242,0.4);"></span>
+          <span>Continue</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="background: var(--color-bg); color: var(--color-text);">
+      <div style="max-width: 620px; margin: 0 auto; padding: 64px 24px 40px;">
+        <p style="font-family: var(--font-heading); font-weight: 400; font-size: clamp(24px, 6vw, 34px); line-height: 1.24; margin: 0 0 var(--space-6); text-wrap: pretty;">Estamos criando um lugar pensado para quem busca mais equilíbrio, paz e harmonia. Um espaço para desacelerar, respirar e aproveitar melhor cada momento.</p>
+        <hr style="height: 1px; border: 0; margin: 0 0 var(--space-6); background: var(--color-divider);">
+        <p style="font-size: 16.5px; line-height: 1.72; margin: 0 0 var(--space-4);">Hoje, nossa chácara já conta com restaurante, café colonial e diversos espaços para receber você.</p>
+        <p style="font-size: 16.5px; line-height: 1.72; margin: 0 0 var(--space-2);">E estamos preparando ainda mais novidades:</p>
+        <p style="font-size: 16.5px; line-height: 1.72; margin: 0 0 var(--space-6); color: var(--color-accent-700);">SPA, clínica Meitan, espaços culturais, porcelanas, copos e uma experiência especial dedicada à cultura do chá.</p>
+        <hr style="height: 1px; border: 0; margin: 0 0 var(--space-6); background: var(--color-divider);">
+        <p style="font-size: 16.5px; line-height: 1.72; margin: 0 0 var(--space-4);">Mas queremos ir além.</p>
+        <p style="font-family: var(--font-heading); font-weight: 400; font-style: italic; font-size: clamp(22px, 5.4vw, 30px); line-height: 1.3; margin: 0 0 var(--space-4); text-wrap: pretty;">Imagine que esta chácara fosse sua. Que você passasse os finais de semana aqui, com sua família, seus amigos ou simplesmente aproveitando seu próprio tempo.</p>
+        <p style="font-size: 16.5px; line-height: 1.72; margin: 0 0 var(--space-6);">O que você gostaria de encontrar? Queremos construir esse lugar junto com você. Buscando equilíbrio, paz e harmonia.</p>
+        <hr style="height: 1px; border: 0; margin: 0 0 var(--space-6); background: var(--color-divider);">
+        <p style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(26px, 6.4vw, 38px); line-height: 1.18; margin: 0 0 var(--space-8); text-wrap: pretty;">Agora queremos saber: o que não poderia faltar na sua chácara ideal?</p>
+        <button type="button" onClick="{{ onStart }}" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; width: 100%; min-height: 60px; padding: 0 32px; border: 1px solid var(--color-accent); border-radius: var(--radius-md); cursor: pointer; background: transparent; color: var(--color-accent-700); font-family: var(--font-heading); font-weight: 600; font-size: 17px; letter-spacing: 0.08em; text-transform: uppercase;" style-hover="background: var(--color-accent-100);">Começar <span style="font-size: 18px; line-height: 1;">→</span></button>
+        <div style="margin-top: 16px; text-align: center; font-size: 12.5px; color: var(--color-neutral-600);">Cerca de 2 minutos · anônimo · sem cadastro</div>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ isQuestion }}">
+    <div style="flex: 1; display: flex; flex-direction: column; min-height: 100dvh;">
+
+      <div style="position: sticky; top: 0; z-index: 5; background: var(--color-bg); border-bottom: 1px solid var(--color-divider);">
+        <div style="max-width: 980px; margin: 0 auto; padding: 12px 18px 10px; display: flex; align-items: center; gap: 14px;">
+          <button type="button" onClick="{{ onBack }}" aria-label="Voltar" style="flex: none; width: 40px; height: 40px; display: grid; place-items: center; border: 1px solid var(--color-divider); border-radius: var(--radius-md); background: transparent; color: var(--color-text); cursor: pointer; font-size: 16px;" style-hover="background: var(--color-neutral-200);">←</button>
+          <div style="flex: 1; display: flex; gap: 6px;">
+            <sc-for list="{{ chapters }}" as="ch" hint-placeholder-count="5">
+              <div style="flex: 1; min-width: 0;">
+                <div style="height: 1px; background: {{ ch.bar }};"></div>
+                <div style="margin-top: 8px; font-size: 9.5px; letter-spacing: 0.16em; text-transform: uppercase; font-variant-numeric: tabular-nums; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: {{ ch.ink }};">{{ ch.num }} {{ ch.name }}</div>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+
+      <div style="flex: 1; max-width: 980px; width: 100%; margin: 0 auto; padding: 30px 18px 130px;">
+        <div style="animation: gx-fade 420ms ease-out both;">
+          <div style="font-size: 13.5px; line-height: 1.5; color: var(--color-accent-700); font-style: italic; margin-bottom: 10px; min-height: 20px;">{{ kicker }}</div>
+          <h2 style="font-family: var(--font-heading); font-weight: 400; font-size: clamp(30px, 7.4vw, 46px); line-height: 1.06; letter-spacing: 0.002em; margin: 0 0 10px; max-width: 22ch; text-wrap: pretty;">{{ question }}</h2>
+          <div style="font-size: 13.5px; color: var(--color-neutral-700); margin-bottom: 26px;">{{ hint }}</div>
+        </div>
+
+        <sc-if value="{{ isOpen }}">
+          <div style="display: flex; flex-direction: column; gap: 28px; max-width: 600px;">
+            <sc-for list="{{ fields }}" as="f" hint-placeholder-count="2">
+              <div>
+                <label style="display: block; font-family: var(--font-heading); font-size: 18px; font-weight: 600; margin-bottom: 10px;">{{ f.label }}</label>
+                <textarea rows="4" placeholder="{{ f.ph }}" defaultValue="{{ f.initial }}" onInput="{{ f.onInput }}" style="width: 100%; box-sizing: border-box; padding: 14px 15px; border: 1px solid var(--color-divider); border-radius: var(--radius-md); background: var(--color-surface); color: var(--color-text); font-family: var(--font-body); font-size: 16px; line-height: 1.6; resize: vertical;" style-focus="outline: 2px solid var(--color-accent); outline-offset: 2px; border-color: var(--color-accent);"></textarea>
+              </div>
+            </sc-for>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ isPhoto }}">
+          <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px;">
+            <sc-for list="{{ options }}" as="opt" hint-placeholder-count="8">
+              <div style="border-radius: var(--radius-md); overflow: hidden; background: {{ opt.bg }}; box-shadow: {{ opt.shadow }}; border: {{ opt.ring }}; transition: border-color 140ms ease;">
+                <div style="position: relative; aspect-ratio: 4 / 5; padding: 5px; background: var(--color-surface);">
+                  <image-slot class="plate" id="{{ opt.slot }}" shape="rect" fit="cover" placeholder="{{ opt.slotHint }}"></image-slot>
+                </div>
+                <button type="button" onClick="{{ opt.onSelect }}" style="width: 100%; min-height: 54px; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 10px 12px; border: 0; background: transparent; color: {{ opt.fg }}; cursor: pointer; text-align: left; font-family: var(--font-heading); font-size: 17px; font-weight: 600; line-height: 1.2;">
+                  <span>{{ opt.label }}</span>
+                  <span style="flex: none; width: 20px; height: 20px; border-radius: 999px; display: grid; place-items: center; font-size: 12px; border: 1.5px solid {{ opt.dotEdge }}; background: {{ opt.dotFill }}; color: {{ opt.dotInk }};">{{ opt.mark }}</span>
+                </button>
+              </div>
+            </sc-for>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ isWord }}">
+          <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(148px, 1fr)); gap: 10px;">
+            <sc-for list="{{ options }}" as="opt" hint-placeholder-count="12">
+              <button type="button" onClick="{{ opt.onSelect }}" style="min-height: 66px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 4px; padding: 15px 17px; border-radius: var(--radius-md); cursor: pointer; text-align: left; font-family: var(--font-body); transition: background 140ms ease, border-color 140ms ease; border: 1px solid {{ opt.bd }}; background: {{ opt.bg }}; color: {{ opt.fg }};">
+                <span style="font-family: var(--font-heading); font-size: 19px; font-weight: 600; line-height: 1.15;">{{ opt.label }}</span>
+                <span style="font-size: 11.5px; line-height: 1.35; font-style: italic; opacity: 0.7;">{{ opt.sub }}</span>
+              </button>
+            </sc-for>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ isAxis }}">
+          <div style="display: flex; flex-direction: column; gap: 24px;">
+            <sc-for list="{{ axes }}" as="ax" hint-placeholder-count="5">
+              <div style="padding: 16px 16px 12px; border-radius: var(--radius-md); background: transparent; border: 1px solid var(--color-divider);">
+                <div style="display: flex; justify-content: space-between; gap: 12px; font-size: 13px; font-weight: 600; margin-bottom: 12px;">
+                  <span style="max-width: 44%; font-family: var(--font-heading); font-size: 17px; color: {{ ax.leftInk }};">{{ ax.left }}</span>
+                  <span style="max-width: 44%; text-align: right; font-family: var(--font-heading); font-size: 17px; color: {{ ax.rightInk }};">{{ ax.right }}</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 4px;">
+                  <sc-for list="{{ ax.dots }}" as="d" hint-placeholder-count="5">
+                    <button type="button" onClick="{{ d.onSelect }}" aria-label="{{ d.aria }}" style="flex: 1; height: 46px; display: grid; place-items: center; border: 0; background: transparent; cursor: pointer;">
+                      <span style="display: block; border-radius: 999px; transition: all 160ms ease; width: {{ d.size }}; height: {{ d.size }}; background: {{ d.fill }}; border: 1px solid {{ d.edge }};"></span>
+                    </button>
+                  </sc-for>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+        </sc-if>
+      </div>
+
+      <div style="position: fixed; left: 0; right: 0; bottom: 0; z-index: 6; background: linear-gradient(to top, var(--color-bg) 62%, rgba(243,242,242,0));">
+        <div style="max-width: 980px; margin: 0 auto; padding: 18px 18px 22px; display: flex; align-items: center; gap: 14px;">
+          <div style="flex: 1; font-size: 12.5px; line-height: 1.35; color: var(--color-neutral-700);">{{ counter }}</div>
+          <button type="button" onClick="{{ onAdvance }}" disabled="{{ blocked }}" style="min-height: 52px; padding: 0 30px; border: 1px solid {{ ctaBd }}; border-radius: var(--radius-md); cursor: pointer; font-family: var(--font-heading); font-weight: 600; font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase; transition: opacity 160ms ease; background: {{ ctaBg }}; color: {{ ctaInk }}; opacity: {{ ctaOpacity }}; cursor: {{ ctaCursor }};">{{ ctaLabel }}</button>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ isOutro }}">
+    <div style="flex: 1; min-height: 100dvh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 60px 24px; background: #1c1b1a; color: #f3f2f2;">
+      <div style="height: 150px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; margin-bottom: 34px;">
+        <div style="position: relative; width: 120px; height: 130px;">
+          <div style="position: absolute; left: 50%; bottom: 0; width: 2px; margin-left: -1px; background: var(--color-accent-500); border-radius: 999px; animation: gx-stem 1100ms 700ms ease-out both; height: 74px;"></div>
+          <div style="--r: -34deg; position: absolute; left: 50%; bottom: 52px; width: 46px; height: 30px; margin-left: -48px; background: var(--color-accent-600); border-radius: 999px 4px 999px 4px; transform-origin: bottom right; animation: gx-leaf 800ms 1500ms ease-out both;"></div>
+          <div style="--r: 34deg; position: absolute; left: 50%; bottom: 66px; width: 46px; height: 30px; margin-left: 2px; background: var(--color-accent-400); border-radius: 4px 999px 4px 999px; transform-origin: bottom left; animation: gx-leaf 800ms 1800ms ease-out both;"></div>
+          <div style="position: absolute; left: 50%; bottom: -6px; width: 14px; height: 14px; margin-left: -7px; border-radius: 999px; background: var(--color-accent-200); animation: gx-seed 700ms ease-out both;"></div>
+          <div style="position: absolute; left: 50%; top: -6px; width: 108px; height: 108px; margin-left: -54px; border-radius: 999px; border: 1px solid rgba(182,130,53,0.32); animation: gx-fade 900ms 2200ms ease-out both, gx-breathe 6s 2200ms ease-in-out infinite;"></div>
+        </div>
+      </div>
+      <h2 style="font-family: var(--font-heading); font-weight: 400; font-size: clamp(32px, 9vw, 54px); line-height: 1.05; margin: 0 0 16px; max-width: 17ch; animation: gx-rise 700ms 400ms ease-out both;">Você acabou de ajudar a plantar uma ideia.</h2>
+      <p style="font-size: 16px; line-height: 1.6; font-style: italic; color: var(--color-accent-200); max-width: 32ch; margin: 0 0 30px; animation: gx-rise 700ms 700ms ease-out both;">As suas escolhas agora fazem parte do Jardim Guanxin.</p>
+      <p style="font-size: 13.5px; line-height: 1.6; color: rgba(243,242,242,0.5); max-width: 36ch; margin: 0; animation: gx-rise 700ms 1000ms ease-out both;">Quando as paredes começarem a subir, parte delas já terá sido imaginada por você.</p>
+    </div>
+  </sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:420,&quot;height&quot;:860}}">
+const CH = [
+  { num: '01', name: 'Ambiente' },
+  { num: '02', name: 'Experiências' },
+  { num: '03', name: 'Sensações' },
+  { num: '04', name: 'Descobertas' },
+  { num: '05', name: 'Matéria' },
+];
+
+// Cada opção carrega tags semânticas para cruzamento posterior.
+const o = (k, label, sub, tags) => ({ k, label, sub: sub || '', tags: tags || [] });
+
+const STEPS = [
+  {
+    id: 'open_wishes', ch: 0, type: 'open',
+    kicker: 'Antes de qualquer opção nossa.',
+    question: 'Com suas palavras: o que você gostaria de encontrar aqui?',
+    hint: 'Escreva o que vier à cabeça. Pode pular e ir direto para as escolhas.',
+    fields: [
+      { k: 'encontrar', label: 'O que eu gostaria de encontrar', ph: 'Um jardim para caminhar sem pressa, uma casa de chá, um lugar para ler…' },
+      { k: 'sentir', label: 'O que eu gostaria de sentir', ph: 'Calma desde a entrada, silêncio, vontade de voltar…' },
+    ],
+  },
+  {
+    id: 'spaces_preferences', ch: 0, type: 'photo', max: 4,
+    kicker: 'Agora imagine que você acabou de chegar.',
+    question: 'Onde você passaria mais tempo?',
+    hint: 'Escolha até 4.',
+    slot: 'esp',
+    options: [
+      o('jardim_contemplativo', 'Jardim contemplativo', 'Vegetação densa, caminhos, permanência', ['natureza', 'silêncio', 'contemplação', 'verde', 'wellness']),
+      o('patio_interno', 'Pátio interno', 'Céu aberto cercado por paredes', ['arquitetura', 'privacidade', 'céu', 'oriental']),
+      o('casa_de_cha', 'Casa de chá', 'Ritual, madeira, luz baixa', ['chá', 'ritual', 'cultura', 'intimista']),
+      o('cafe_restaurante', 'Café e restaurante', 'Mesa, aroma, conversa', ['gastronomia', 'convivência', 'social']),
+      o('galeria', 'Galeria de arte', 'Paredes livres, obra em foco', ['arte', 'cultura', 'exposição']),
+      o('biblioteca', 'Biblioteca e leitura', 'Estantes, silêncio, tempo longo', ['leitura', 'cultura', 'permanência']),
+      o('atelie', 'Ateliês e oficinas', 'Bancada, mãos, matéria', ['ofício', 'criação', 'aprendizagem']),
+      o('meditacao_yoga', 'Meditação e yoga', 'Piso livre, luz baixa, corpo', ['wellness', 'silêncio', 'corpo']),
+      o('estudo_coworking', 'Estudo e trabalho', 'Mesa, tomada, concentração', ['trabalho', 'estudo', 'permanência']),
+      o('loja', 'Loja de curadoria', 'Poucas peças, bem escolhidas', ['consumo', 'curadoria', 'descoberta']),
+      o('eventos', 'Anfiteatro e eventos', 'Arquibancada, palco, encontro', ['cultura', 'encontro', 'coletivo']),
+      o('caminhos', 'Caminhos e jardim sensorial', 'Percurso, aroma, textura', ['natureza', 'sensorial', 'movimento']),
+    ],
+  },
+  {
+    id: 'experience_preferences', ch: 1, type: 'word', max: 5,
+    kicker: 'Agora imagine que você tem duas horas só para você.',
+    question: 'O que gostaria de experimentar?',
+    hint: 'Escolha até 5.',
+    options: [
+      o('cerimonia_cha', 'Cerimônia do chá', '', ['chá', 'ritual', 'cultura', 'oriental']),
+      o('ceramica', 'Cerâmica', '', ['ofício', 'mãos', 'criação', 'ateliê']),
+      o('caligrafia', 'Caligrafia', '', ['oriental', 'cultura', 'concentração']),
+      o('pintura', 'Pintura e desenho', '', ['arte', 'criação', 'ateliê']),
+      o('meditacao', 'Meditação', '', ['wellness', 'silêncio', 'presença']),
+      o('yoga', 'Yoga', '', ['wellness', 'corpo', 'movimento']),
+      o('aromaterapia', 'Aromaterapia', '', ['wellness', 'aroma', 'sensorial']),
+      o('culinaria', 'Culinária natural', '', ['gastronomia', 'aprendizagem', 'mãos']),
+      o('gastronomia', 'Experiência gastronômica', '', ['gastronomia', 'prazer', 'encontro']),
+      o('jardinagem', 'Jardinagem', '', ['natureza', 'mãos', 'aprendizagem']),
+      o('musica', 'Música ao vivo', '', ['cultura', 'som', 'encontro']),
+      o('palestras', 'Palestras e conversas', '', ['aprendizagem', 'cultura', 'encontro']),
+      o('exposicoes', 'Exposições', '', ['arte', 'cultura', 'descoberta']),
+      o('leitura', 'Leitura', '', ['leitura', 'silêncio', 'permanência']),
+      o('ar_livre', 'Experiências ao ar livre', '', ['natureza', 'corpo', 'movimento']),
+      o('cultura_chinesa', 'Cultura chinesa contemporânea', '', ['oriental', 'cultura', 'descoberta']),
+      o('encontros', 'Encontros culturais', '', ['encontro', 'cultura', 'social']),
+      o('nada', 'Nada programado', '', ['ócio', 'contemplação', 'liberdade']),
+    ],
+  },
+  {
+    id: 'emotion_preferences', ch: 2, type: 'word', max: 4,
+    kicker: 'Você está indo embora.',
+    question: 'Como gostaria de estar se sentindo?',
+    hint: 'Escolha até 4.',
+    options: [
+      o('leve', 'Leve'), o('tranquilo', 'Tranquilo'), o('inspirado', 'Inspirado'), o('renovado', 'Renovado'),
+      o('conectado', 'Conectado'), o('criativo', 'Criativo'), o('presente', 'Presente'), o('acolhido', 'Acolhido'),
+      o('energizado', 'Energizado'), o('em_paz', 'Em paz'), o('curioso', 'Curioso'), o('equilibrado', 'Equilibrado'),
+      o('feliz', 'Feliz'), o('contemplativo', 'Contemplativo'),
+    ],
+  },
+  {
+    id: 'atmosphere_axes', ch: 2, type: 'axis',
+    kicker: '',
+    question: 'Para qual lado você inclina?',
+    hint: 'Toque em qualquer ponto entre os dois. Pode ficar no meio.',
+    axes: [
+      { k: 'silencio_energia', left: 'Silêncio', right: 'Energia' },
+      { k: 'minimalismo_riqueza', left: 'Minimalismo', right: 'Riqueza visual' },
+      { k: 'selvagem_desenhado', left: 'Natureza selvagem', right: 'Jardim desenhado' },
+      { k: 'luz_penumbra', left: 'Luz abundante', right: 'Atmosfera intimista' },
+      { k: 'solidao_convivio', left: 'Solidão contemplativa', right: 'Convivência' },
+    ],
+  },
+  {
+    id: 'product_preferences', ch: 3, type: 'word', max: 5,
+    kicker: '',
+    question: 'Que descoberta você levaria para casa?',
+    hint: 'Escolha até 5.',
+    options: [
+      o('chas', 'Chás', '', ['chá', 'consumo']), o('ceramica_obj', 'Cerâmica', '', ['ofício', 'casa']),
+      o('arte_obj', 'Arte', '', ['arte']), o('livros', 'Livros', '', ['cultura', 'leitura']),
+      o('casa', 'Artigos para casa', '', ['casa', 'design']), o('naturais', 'Produtos naturais', '', ['wellness']),
+      o('aromas', 'Aromas e óleos', '', ['wellness', 'sensorial']), o('papelaria', 'Papelaria', '', ['design', 'ofício']),
+      o('roupas', 'Roupas e acessórios', '', ['moda']), o('orientais', 'Objetos orientais contemporâneos', '', ['oriental', 'design']),
+      o('artesanal', 'Produtos artesanais', '', ['ofício', 'autoral']), o('comida', 'Gastronomia para levar', '', ['gastronomia']),
+      o('presentes', 'Presentes', '', ['consumo', 'afeto']), o('artistas', 'Peças de artistas', '', ['arte', 'autoral']),
+      o('exclusivos', 'Produtos exclusivos', '', ['curadoria', 'descoberta']), o('nada_levar', 'Nada — viria pela experiência', '', ['experiência']),
+    ],
+  },
+  {
+    id: 'architecture_attributes', ch: 4, type: 'word', max: 3,
+    kicker: 'Esqueça estilos. Pense no que você sente ao entrar.',
+    question: 'O que uma construção precisa ter para te dar vontade de entrar?',
+    hint: 'Escolha até 3.',
+    options: [
+      o('luz_abundante', 'Muita luz natural', 'Pé-direito alto, aberturas amplas', ['luz', 'escala', 'abertura']),
+      o('penumbra', 'Penumbra e recolhimento', 'Luz filtrada, pouca abertura', ['luz', 'intimista', 'recolhimento']),
+      o('madeira', 'Madeira e materiais quentes', '', ['material', 'quente', 'tato']),
+      o('pedra', 'Pedra e concreto aparentes', '', ['material', 'bruto', 'peso']),
+      o('leveza', 'Estrutura leve, quase transparente', '', ['estrutura', 'leveza', 'vidro']),
+      o('massa', 'Paredes espessas e maciças', '', ['estrutura', 'peso', 'abrigo']),
+      o('escala_grande', 'Escala grande e generosa', '', ['escala', 'amplitude']),
+      o('escala_intima', 'Escala pequena e íntima', '', ['escala', 'intimista']),
+      o('linhas_retas', 'Linhas retas e precisas', '', ['geometria', 'rigor', 'oriental']),
+      o('organico', 'Formas orgânicas e irregulares', '', ['geometria', 'natureza']),
+      o('desaparece', 'Construção que some na vegetação', '', ['integração', 'natureza', 'discrição']),
+      o('afirma', 'Construção que se afirma na paisagem', '', ['presença', 'gesto', 'marco']),
+    ],
+  },
+  {
+    id: 'closing_phrase', ch: 4, type: 'word', max: 1,
+    kicker: 'Complete a frase.',
+    question: 'O Jardim Guanxin deveria ser um lugar onde eu pudesse…',
+    hint: 'Escolha uma.',
+    options: [
+      o('respirar', 'Respirar'), o('desacelerar_f', 'Desacelerar'), o('descobrir_f', 'Descobrir'),
+      o('aprender_f', 'Aprender'), o('criar_f', 'Criar'), o('conectar_f', 'Me conectar'),
+      o('encontrar_f', 'Encontrar pessoas'), o('sozinho', 'Ficar sozinho'), o('cuidar', 'Cuidar de mim'),
+      o('inspirar', 'Me inspirar'), o('estar', 'Simplesmente estar'),
+    ],
+  },
+];
+
+const SEL_BG = 'var(--color-accent-100)', SEL_BD = 'var(--color-accent)', SEL_INK = 'var(--color-accent-900)';
+const IDLE_BG = 'transparent', IDLE_BD = 'var(--color-divider)', IDLE_INK = 'var(--color-text)';
+
+class Component extends DCLogic {
+  state = { i: -1, answers: {}, order: {}, timings: {}, seen: {} };
+
+  componentDidMount() {
+    this.t0 = Date.now();
+    this.tStep = Date.now();
+    // Garante o play mudo mesmo se o navegador segurar o autoplay.
+    const poke = () => {
+      const v = document.getElementById('gx-video');
+      if (!v || !v.play) return;
+      // iOS exige os atributos literais no nó, não só as propriedades.
+      v.muted = true;
+      v.defaultMuted = true;
+      v.setAttribute('muted', '');
+      v.setAttribute('autoplay', '');
+      const p = v.play();
+      if (p && p.catch) p.catch(() => {});
+    };
+    this.pokes = [200, 900, 2200].map((ms) => setTimeout(poke, ms));
+    this.onTouch = () => poke();
+    window.addEventListener('pointerdown', this.onTouch, { once: true });
+    import('./guanxin-store.js').then((m) => {
+      this.store = m;
+      this.rid = m.newRespondentId();
+    }).catch(() => {});
+  }
+
+  step() { return STEPS[this.state.i] || null; }
+
+  optionsFor(st) {
+    if (!st) return [];
+    if (st.derived) {
+      const src = STEPS.find((s) => s.id === st.derived);
+      const picked = this.state.answers[st.derived] || [];
+      return src.options.filter((op) => picked.includes(op.k));
+    }
+    return st.options || [];
+  }
+
+  setOpen(k, v) {
+    const cur = this.state.answers.open_wishes || {};
+    // Sem setState: o textarea é não-controlado, então re-render não é necessário.
+    this.state.answers.open_wishes = { ...cur, [k]: v };
+  }
+
+  toggle(st, key) {
+    this.setState((s) => {
+      const cur = s.answers[st.id] || [];
+      let next;
+      if (st.max === 1) next = cur[0] === key ? [] : [key];
+      else if (cur.includes(key)) next = cur.filter((x) => x !== key);
+      else if (cur.length >= st.max) return null;
+      else next = cur.concat(key);
+      const ord = (s.order[st.id] || []).concat(key);
+      return { answers: { ...s.answers, [st.id]: next }, order: { ...s.order, [st.id]: ord } };
+    });
+  }
+
+  setAxis(k, v) {
+    this.setState((s) => {
+      const cur = s.answers.atmosphere_axes || {};
+      return { answers: { ...s.answers, atmosphere_axes: { ...cur, [k]: v } } };
+    });
+  }
+
+  record(done) {
+    const s = this.state;
+    return {
+      respondent_id: this.rid,
+      completed: !!done,
+      last_step: (this.step() || {}).id || (done ? 'done' : 'intro'),
+      session_duration_ms: Date.now() - (this.t0 || Date.now()),
+      device_type: this.store ? this.store.deviceType() : 'unknown',
+      viewport: `${window.innerWidth}x${window.innerHeight}`,
+      locale: navigator.language,
+      referrer: document.referrer || null,
+      answers: s.answers,
+      step_timings: s.timings,
+      choice_order: s.order,
+      rejected: s.seen,
+    };
+  }
+
+  advance = () => {
+    const st = this.step();
+    if (st) {
+      const dt = Date.now() - (this.tStep || Date.now());
+      const shown = this.optionsFor(st).map((x) => x.k);
+      const picked = this.state.answers[st.id] || [];
+      this.setState((s) => ({
+        timings: { ...s.timings, [st.id]: dt },
+        seen: { ...s.seen, [st.id]: shown.filter((k) => !picked.includes(k)) },
+      }));
+    }
+    this.tStep = Date.now();
+    let n = this.state.i + 1;
+    while (STEPS[n] && STEPS[n].derived && this.optionsFor(STEPS[n]).length < 2) n++;
+    this.setState({ i: n }, () => {
+      window.scrollTo(0, 0);
+      if (this.store) this.store.persist(this.record(n >= STEPS.length));
+    });
+  };
+
+  back = () => {
+    this.tStep = Date.now();
+    let n = this.state.i - 1;
+    while (STEPS[n] && STEPS[n].derived && this.optionsFor(STEPS[n]).length < 2) n--;
+    this.setState({ i: Math.max(-1, n) }, () => window.scrollTo(0, 0));
+  };
+
+  renderVals() {
+    const i = this.state.i;
+    const st = this.step();
+    const isIntro = i < 0;
+    const isOutro = i >= STEPS.length;
+    const vals = {
+      isIntro, isOutro, isQuestion: !isIntro && !isOutro,
+      onStart: () => { this.tStep = Date.now(); this.setState({ i: 0 }); },
+      onAdvance: this.advance,
+      onBack: this.back,
+    };
+    if (!st) return vals;
+
+    const picked = st.type === 'axis' ? [] : (this.state.answers[st.id] || []);
+    const opts = this.optionsFor(st);
+    const full = st.max > 1 && picked.length >= st.max;
+
+    vals.kicker = st.kicker || '';
+    vals.question = st.question;
+    vals.hint = st.hint;
+    vals.isOpen = st.type === 'open';
+    if (st.type === 'open') {
+      const cur = this.state.answers.open_wishes || {};
+      vals.fields = st.fields.map((f) => ({
+        label: f.label, ph: f.ph, initial: cur[f.k] || '',
+        onInput: (e) => this.setOpen(f.k, e.target.value),
+      }));
+    }
+    vals.isPhoto = st.type === 'photo';
+    vals.isWord = st.type === 'word';
+    vals.isAxis = st.type === 'axis';
+
+    vals.chapters = CH.map((c, n) => ({
+      num: c.num, name: c.name,
+      bar: n < st.ch ? 'var(--color-accent-400)' : n === st.ch ? 'var(--color-accent)' : 'var(--color-neutral-300)',
+      ink: n === st.ch ? 'var(--color-text)' : 'var(--color-neutral-600)',
+    }));
+
+    vals.options = opts.map((op) => {
+      const on = picked.includes(op.k);
+      const dim = !on && full;
+      return {
+        label: st.blind ? op.label : op.label,
+        sub: op.sub,
+        slot: `gx-${st.slot}-${op.k}`,
+        slotHint: st.blind ? `Referência ${op.label}` : op.label,
+        mark: on ? '✓' : '',
+        bg: on ? SEL_BG : IDLE_BG,
+        bd: on ? SEL_BD : IDLE_BD,
+        fg: on ? SEL_INK : IDLE_INK,
+        dotEdge: on ? 'var(--color-accent-600)' : 'var(--color-neutral-400)',
+        dotFill: on ? 'var(--color-accent-600)' : 'transparent',
+        dotInk: '#f3f2f2',
+        ring: on ? '1px solid var(--color-accent)' : '1px solid var(--color-divider)',
+        shadow: on ? 'var(--shadow-sm)' : 'none',
+        opacity: dim ? 0.55 : 1,
+        onSelect: () => this.toggle(st, op.k),
+      };
+    });
+
+    if (st.type === 'axis') {
+      const cur = this.state.answers.atmosphere_axes || {};
+      vals.axes = st.axes.map((ax) => {
+        const v = cur[ax.k];
+        return {
+          left: ax.left, right: ax.right,
+          leftInk: v < 0 ? 'var(--color-accent-700)' : 'var(--color-neutral-700)',
+          rightInk: v > 0 ? 'var(--color-accent-700)' : 'var(--color-neutral-700)',
+          dots: [-2, -1, 0, 1, 2].map((n) => {
+            const on = v === n;
+            return {
+              aria: `${ax.left} ${n}`,
+              size: on ? '26px' : (n === 0 ? '10px' : '14px'),
+              fill: on ? 'var(--color-accent-600)' : 'transparent',
+              edge: on ? 'var(--color-accent-600)' : 'var(--color-neutral-400)',
+              onSelect: () => this.setAxis(ax.k, n),
+            };
+          }),
+        };
+      });
+    }
+
+    const ok = st.type === 'axis' || st.type === 'open' ? true : picked.length > 0;
+    const last = i === STEPS.length - 1;
+    vals.blocked = !ok;
+    vals.ctaLabel = last ? 'Concluir' : 'Avançar';
+    vals.ctaBg = 'transparent';
+    vals.ctaBd = ok ? 'var(--color-accent)' : 'var(--color-neutral-300)';
+    vals.ctaInk = ok ? 'var(--color-accent-700)' : 'var(--color-neutral-500)';
+    vals.ctaOpacity = ok ? 1 : 0.7;
+    vals.ctaCursor = ok ? 'pointer' : 'not-allowed';
+    vals.counter = st.type === 'open'
+      ? 'Opcional · pode seguir em branco'
+      : st.type === 'axis'
+      ? `${Object.keys(this.state.answers.atmosphere_axes || {}).length} de 5 · pode pular`
+      : st.max === 1
+        ? (picked.length ? 'Pronto' : 'Escolha uma opção')
+        : `${picked.length} de ${st.max}`;
+    return vals;
+  }
+}
+</script>
+</body>
+</html>
